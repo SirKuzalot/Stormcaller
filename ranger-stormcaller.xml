@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Stormcaller Ranger Archetype</name>
+        <update version="0.0.1">
+            <file name="ranger-stormcaller.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/blazing-dawn-players-companion/ranger-stormcaller.xml" />
+        </update>
+    </info>
+    
+    <element name="Stormcaller" type="Archetype" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_RANGER_STORMCALLER">
+        <supports>Ranger Archetype</supports>
+        <description>
+            <p>Rangers that walk the path of the Stormcaller draw their power from the positive plane, and use that power to defend the wildlands and hunt down the evils that dwell there. These rangers wield their lightning weapons like extensions of their body, and learn combat techniques that make them highly varied in their combat styles. To them, every weapon holds a distinct purpose when hunting down prey. Fiends and undead are often these ranger’s favored enemies, and many of them ally with celestials.</p>
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_STORMCALLER_LIGHTNING_ARMAMENTS" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_STORMCALLER_VIBRANCE_SHIELD" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_STORMCALLER_LIGHTNING_CHAIN" />
+            <div element="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_STORMCALLER_STATIC_ELECTRICITY" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_STORMCALLER_LIGHTNING_ARMAMENTS" level="3" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_STORMCALLER_VIBRANCE_SHIELD" level="7" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_STORMCALLER_LIGHTNING_CHAIN" level="11" />
+            <grant type="Archetype Feature" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_STORMCALLER_STATIC_ELECTRICITY" level="15" />
+        </rules>
+    </element>
+        <element name="Lightning Armaments" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_STORMCALLER_LIGHTNING_ARMAMENTS">
+            <description>
+                <p>Starting at 3rd level, you learn to draw from the electricity of the divine realm, and craft that energy into weapons.</p>
+                <p class="indent">As a bonus action, you can choose to imbue lightning into an equipped weapon. The imbuement lasts 1 minute. The damage is identical to the base weapon, except its physical damage is replaced with lightning damage.</p>
+                <p class="indent">Also, when imbued you can grant it an additional property based on its existing properties. If a weapon has multiple possible properties, you choose one of them when you conjure the weapon. The properties are listed below:</p>
+                <p class="indent"><strong><em>Electro Blade.</em></strong> If the weapon you imbue is melee, you can cause it to deal 1d4 additional lightning damage on a hit. At level 11, this becomes 2d4</p>
+                <p class="indent"><strong><em>Railgun.</em></strong> If the weapon you imbue is ranged, you can use the stored electricity to shoot a shot that can travel an additional 30 feet before losing effectiveness. At level 11, this becomes 60 feet</p>
+                <p class="indent"><strong><em>Curving Bolt.</em></strong> If the weapon you imbue is ranged, you can cause the shots to curve twice in quick succession, allowing you to get around obstacles that block your direct line of sight. At level 11, you can fully control your shots' trajectory </p>
+                <p class="indent"><strong><em>Maglev Blade.</em></strong> If the weapon you imbue has the light property, you can use it as an offhand weapon without suffering a penalty to the damage dealt with it. At level 11, the weapon no longer needs to be held, and a bonus action can still be used to attack with it</p>
+                <p class="indent"><strong><em>Piercing Shock.</em></strong> If the weapon you imbue has the finesse property, the next time you roll a 19 on an attack roll, you will score a critical hit. The next time you roll a 1 on an attack roll, you can reroll the attack roll. At level 11, you can do this 3 times</p>
+                <p class="indent"><strong><em>Shocking Radiance.</em></strong> If the weapon you imbue has the heavy property, you can cause your attacks with the weapon to push their target up to 10 feet away from you on a hit (shove contested roll rules apply). At level 11, this becomes 15 feet</p>
+                <p class="indent"><strong><em>Lightning Spear.</em></strong> If the weapon you imbue has the reach property, you can further increase your reach with the weapon by 10 feet. At level 11, this becomes 15 feet</p>
+                <p class="indent"><strong><em>Magnetic Harpoon.</em></strong> If the weapon you imbue has the thrown property, you can cause your attacks with the weapon to pull their target up to 10 feet closer to you on a hit (shove contested roll rules apply). At level 11, this becomes 15 feet</p>
+            </description>
+            <sheet>
+                <description>As a bonus action, you can choose to imbue lightning into an equipped weapon. The imbuement lasts 1 minute. The damage is identical to the base weapon, except its physical damage is replaced with lightning damage. Also, when the weapon is imbued, you can grant it an additional property based on its existing properties.</description>
+                <description level="11">As a bonus action, you can choose to imbue lightning into an equipped weapon. The imbuement lasts 1 minute. The damage is identical to the base weapon, except its physical damage is replaced with lightning damage. Also, when the weapon is imbued, you can grant it an additional enhanced property based on its existing properties.</description>
+            </sheet>
+        </element>
+        <element name="Vibrance Shield" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_STORMCALLER_VIBRANCE_SHIELD">
+            <description>
+                <p>At 7th level, you can use your action to conjure an electric shield that floats around you, waiting for the right moment to grant you its protection. If the shield is conjured and you are hit by an attack, you can use your reaction to grant yourself a +3 bonus to your AC that lasts until the start of your next turn, including against the triggering attack. After you use this reaction, the shield will disappear at the start of your next turn.</p>
+            </description>
+            <sheet action="Action">
+                <description>You conjure an electric shield. If the shield is conjured and you are hit by an attack, you can use your reaction to grant yourself a +3 bonus to your AC that lasts until the start of your next turn, including against the triggering attack. After you use this reaction, the shield will disappear at the start of your next turn.</description>
+            </sheet>
+        </element>
+        <element name="Lightning Chain" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_STORMCALLER_LIGHTNING_CHAIN">
+            <description>
+                <p>Starting at 11th level, the additional properties granted to a weapon imbued with your Lightning Armaments feature become stronger.</p>
+                <p class="indent">Additionally, if you take the Attack action and hit two different creatures, a bond of electricity momentarily appears between them. Each creature takes 1d10 lightning damage and is pulled up to 10 feet directly towards the other creature (shove contested roll rules apply).</p>
+            </description>
+            <sheet>
+                <description>If you take the Attack action and hit two different creatures, a bond of electricity momentarily appears between them. Each creature takes 1d6 lightning damage and is pulled up to 10 feet directly towards the other creature (shove contested roll rules apply).</description>
+            </sheet>
+        </element>
+        <element name="Static Electricity" type="Archetype Feature" source="Blazing Dawn Player’s Companion" id="ID_JONOMAN3000_BDPC_ARCHETYPE_FEATURE_STORMCALLER_STATIC_ELECTRICITY">
+            <description>
+                <p>At 15th level, whenever you finish a short or long rest, a sparking aura begins to surround you, granting you temporary hit points equal to your Ranger level. When you lose all these temporary hit points, the aura dissipates in a final burst of electricity. Each creature of your choice within 20 feet is shocked until the end of its next turn. If it is a construct, it is instead stunned</p>
+            </description>
+            <sheet>
+                <description>Whenever you finish a short or long rest, a sparking aura begins to surround you, granting you {{level:ranger}} temporary hit points. When you lose all these temporary hit points, the aura dissipates in a final burst of electricity. Each creature of your choice within 20 feet is shocked until the end of its next turn. If it is a construct, it is instead stunned.</description>
+            </sheet>
+        </element>
+
+</elements>
