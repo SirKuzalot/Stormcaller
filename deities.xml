@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="deities.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/supplements/explorers-guide-to-wildemount/deities.xml" />
+		</update>
+	</info>
+
+	<element name="Lithmar" type="Deity" source="Custom" id="ID_WOTC_EGTW_DEITY_LITHMAR">
+		<description>
+			<p> PlaceHolder.</p>
+			<p class="indent">PlaceHolder.</p>
+			<p class="indent"><strong><em>PlaceHolder.</em></strong> PlaceHolder.</p>
+			<p class="indent"><strong><em>PlaceHolder.</em></strong> PlaceHolder.</p>
+			<h5 class="caption">COMMANDMENTS OF Lithmar</h5>
+			<ul>
+				<li>PlaceHolder.</li>
+				<li>PlaceHolder.</li>
+				<li>PlaceHolder.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="setting">Custom</set>
+			<set name="alignment">CN</set>
+			<set name="domains">Lightning, Selflessnes</set>
+			<set name="symbol">PlaceHolder</set>
+		</setters>
+	</element>
+</elements>
